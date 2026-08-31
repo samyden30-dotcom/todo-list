@@ -59,10 +59,7 @@ export function App() {
     // Filtrage combiné (Recherche + Onglet actif)
     const filteredTasks = tasks.filter((task) => {
         const matchesSearch = task.title.toLowerCase().includes(searchQuery.toLowerCase());
-        const matchesFilter =
-        activeFilter === 'all' ||
-        (activeFilter === 'active' && !task.completed) ||
-        (activeFilter === 'completed' && task.completed);
+        const matchesFilter = activeFilter === 'all' || (activeFilter === 'active' && !task.completed) || (activeFilter === 'completed' && task.completed);
         return matchesSearch && matchesFilter;
     });
 

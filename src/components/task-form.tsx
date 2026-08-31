@@ -3,7 +3,7 @@ import { Input } from './ui/input';
 import { Button } from './ui/button';
 
 interface TaskFormProps {
-  onAddTask: (title: string) => void;
+    onAddTask: (title: string) => void;
 }
 
 export const TaskForm: React.FC<TaskFormProps> = ({ onAddTask }) => {

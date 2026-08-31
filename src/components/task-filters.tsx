@@ -25,11 +25,11 @@ export const TaskFilters: React.FC<TaskFiltersProps> = ({searchQuery, onSearchCh
             className="w-full sm:w-auto"
         >
             <TabsList className="grid grid-cols-3 w-full sm:w-auto">
-            <TabsTrigger value="all">Toutes</TabsTrigger>
-            <TabsTrigger value="active">À faire</TabsTrigger>
-            <TabsTrigger value="completed">Terminées</TabsTrigger>
+            <TabsTrigger value="all"> Toutes </TabsTrigger>
+            <TabsTrigger value="active"> À faire </TabsTrigger>
+            <TabsTrigger value="completed"> Terminées </TabsTrigger>
             </TabsList>
         </Tabs>
         </div>
-  );
+    );
 };
