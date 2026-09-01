@@ -142,3 +142,90 @@ Le fichier `App.tsx` agit comme le chef d'orchestre global du logiciel. C'est à
   * Modification et Inversion : Parcourt et reconstruit proprement le tableau en créant des copies d'objets modifiés afin de respecter les principes d'immuabilité imposés par React.
   * Suppression : Extrait un élément en utilisant la fonction native `.filter()`.
 * Valeurs Dérivées Performantes : Calcule dynamiquement le nombre d'éléments totaux, complétés et actifs à chaque cycle de rendu. Le filtrage croisé (recherche de texte insensible à la casse et onglet actif) s'effectue à la volée, évitant la multiplication inutile d'états réactifs complexes et de bugs de désynchronisation.
+
+
+
+# Todo List App
+
+Application de gestion de tâches développée avec React, TypeScript et Vite.
+
+## Description
+
+Cette application permet de :
+- ajouter une tâche
+- cocher une tâche comme terminée
+- modifier une tâche
+- supprimer une tâche
+- filtrer les tâches
+- rechercher une tâche
+- garder les tâches sauvegardées dans le navigateur grâce au localStorage
+
+---
+
+## Prérequis
+
+Avant de lancer le projet, vérifiez que vous avez installé :
+
+- Node.js version 18 ou supérieure
+- npm
+
+Vous pouvez vérifier avec :
+
+```bash
+node -v
+npm -v
+
+Installation
+Dans le dossier du projet, exécutez :
+npm install
+
+Lancer l’application
+Pour démarrer le projet en mode développement :
+npm run dev
+
+Ensuite, ouvrez l’URL affichée dans le terminal, généralement :
+http://localhost:5173
+
+Accéder à l’application
+Une fois le serveur lancé :
+
+Ouvrez votre navigateur
+Allez sur http://localhost:5173
+Vous verrez l’interface de la Todo List
+
+Utilisation
+
+1. Ajouter une tâche
+Saisissez le nom de la tâche dans le champ
+Cliquez sur le bouton “Ajouter”
+
+2. Cocher une tâche
+Cliquez sur la case à cocher à gauche de la tâche
+La tâche est alors marquée comme terminée
+
+3. Modifier une tâche
+Cliquez sur le bouton “Modifier”
+
+Une fenêtre s’ouvre
+Modifiez le texte de la tâche
+Validez avec “Enregistrer”
+
+4. Supprimer une tâche
+Cliquez sur le bouton “Supprimer”
+
+Une fenêtre de confirmation apparaît
+Cliquez sur “Confirmer” pour valider la suppression
+
+5. Rechercher une tâche
+Utilisez le champ de recherche en haut
+La liste se met à jour automatiquement selon le texte saisi
+
+6. Filtrer les tâches
+Cliquez sur :
+“Toutes”
+“Actives”
+“Terminées”
+
+7. Persistance
+Les tâches sont enregistrées automatiquement dans le navigateur grâce au localStorage, donc elles restent présentes après rechargement de la page.
+
