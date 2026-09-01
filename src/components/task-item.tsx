@@ -73,10 +73,8 @@ export const TaskItem: React.FC<TaskItemProps> = ({task, onToggleTask, onDeleteT
 
         <div className="ml-4 flex items-center gap-2">
             <Dialog open={isEditDialogOpen} onOpenChange={setIsEditDialogOpen}>
-            <DialogTrigger asChild>
-                <Button variant="outline" size="sm">
+            <DialogTrigger render={<Button variant="outline" size="sm"/>}>
                 Modifier
-                </Button>
             </DialogTrigger>
 
             <DialogContent>
@@ -102,10 +100,8 @@ export const TaskItem: React.FC<TaskItemProps> = ({task, onToggleTask, onDeleteT
             </Dialog>
 
             <AlertDialog>
-            <AlertDialogTrigger>
-                <Button variant="destructive" size="sm">
+            <AlertDialogTrigger render={<Button variant="destructive" size="sm"/>}>
                 Supprimer
-                </Button>
             </AlertDialogTrigger>
 
             <AlertDialogPanel>
